@@ -1,0 +1,725 @@
+body 
+{
+  font-family: Arial, sans-serif;
+  background-color:dimgray;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+/* STRONA GŁÓWNA (INDEX)*/
+#glownenag
+{
+  background-image: url(obrazy/naglowek.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 0 4px 8px 0 darkorange, 0 6px 20px 0 yellow;
+}
+#glowne
+{
+  background-image: url(obrazy/biblioteka.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  border-radius: 10px;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 darkcyan, 0 6px 20px 0 lightskyblue;
+}  
+#glowne a{
+  margin: 1%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 30%;
+}
+.zakladki 
+{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+#glowne a:hover 
+{
+  transform: scale(1.1);
+}
+.zakladki img 
+{
+  width: 100%;
+  height: 100%;
+  size: 100%;
+  border-radius: 10px;
+}
+
+/* NAGŁÓWEK */
+header 
+{
+  background-color:brown;
+  color: #fff;
+  text-align: center;
+  padding: 3% 0;
+  margin-bottom: 1%;
+}
+header h1 span
+{
+  color:burlywood;
+}
+
+/* MENU */
+nav 
+{
+  background-color:darkgrey;
+  color: #fff;
+  padding: 0.5%;
+  position: fixed;
+  top: 0;
+  left: -14%;
+  width: 15%;
+  padding-bottom:200%;
+  z-index: 1;
+  transition: left 0.3s ease;
+  font-size: 70%;
+}
+  
+nav.open 
+{
+  left: 0;
+} 
+nav ul 
+{
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li 
+{
+  margin-bottom: 3%;
+  border-radius: 20px;
+  background-color: #333;
+  padding: 3%;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 80%;
+}
+nav ul li:hover 
+{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px skyblue;
+}
+nav ul li a 
+{
+  text-decoration: none;
+  color: #333;
+  display: block;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #fff;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 5% 0%;
+}
+nav ul li:hover a
+{
+  color: deepskyblue;
+}
+
+/* CENNIK */
+section 
+{
+  text-align: center;
+  padding: 10% 0;
+}
+table 
+{
+  font-size: 60%;
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10% rgba(0, 0, 0, 0.1);
+  
+}
+th, td 
+{
+  padding: 2%;
+  border: 2px solid #ccc;
+  color: #fff;
+}
+th 
+{
+  background-color: brown;
+  color: #fff;
+}
+
+/* OPINIE */
+.stars 
+{
+  font-size: 140%;
+  color: goldenrod;
+}
+.opinion 
+{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  margin-bottom: 5%;
+  width: 50%;
+  margin: auto;
+}
+#opinion-form
+{
+  display: flex;
+  justify-content: center;
+  margin-right: 18%;
+}
+#opinion-form textarea
+{
+  width: 30%;
+  padding: 10%;
+  margin-left: 5%;
+}
+#opinion-form input
+{
+  width: 100%;
+  margin-left: 0.5%;
+}
+#submit-button
+{
+  width: 10%;
+  border-radius: 100%;
+  font-size: 90%;
+  margin-left: 2%;
+  max-height: 20vh;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#opinion-form div
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 23%;
+}
+section>p
+{
+  font-size: 70%;
+  font-weight: 500;
+  color:#ccc;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* SUPPORT */
+#questions li
+{
+  background-color: #ccc;
+  border: 5px #fff;
+  border-radius: 5px;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  transition: all 1s ease;
+  margin-bottom: 5%;
+  max-height: 20px;
+}
+#questions li:hover
+{
+  padding-bottom: 10%;
+  max-height: 70px;
+}
+#questions li strong
+{
+  margin-bottom: 1%;
+}
+#questions span
+{
+  color: transparent;
+  transition: all 0.9s ease;
+}
+#questions li:hover span
+{
+  color:#333;
+}
+#faq
+{
+  width: 30%;
+  margin-left: 5%;
+}
+#srodek
+{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 5%;
+  background: transparent;
+  border: none;
+  overflow-y: auto;
+}
+#contact
+{
+  margin-left: 10%;
+  width: 50%;
+}
+#contact-form
+{
+  width: 100%;
+}
+#contact-form textarea
+{
+  width: 100%;
+  padding: 5% 0%;
+  border-radius: 10px;
+}
+
+/* STOPKA */
+.footer 
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+.footer ul 
+{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer ul li 
+{
+  width: 20%;
+  display: inline;
+  margin-right: 2%;
+  transition: all 0.3s ease;
+}
+.footer ul li a img
+{
+  transition: all 0.3s ease;
+  border-radius: 5%;
+  width: 3%;
+
+}
+.footer ul li a img:hover
+{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px skyblue;
+}
+.footer ul li a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* PODSTRONY DO KSIĄŻEK */
+#podstrona
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;   
+  background-color: rgb(94, 47, 13);
+  background-image: url(obrazy/wiedzminopis.jpg);
+  background-size: 100%;
+}
+#podstrona2
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;   
+  background-color:deepskyblue;
+  background-image: url(obrazy/narniaopis.jpg);
+  background-size: 100%;
+}
+#podstrona3
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;   
+  background-color:cadetblue;
+  background-image: url(obrazy/mitologiaopis.jpg);
+  background-size: 100%;
+}
+.book-container {
+  width: 100%;
+  height: 100vh;
+  text-wrap: wrap;
+  overflow-y: auto;   
+}
+#podstrona #pudelko #page2
+{
+  list-style-image: url(obrazy/wiedzminicon.png);
+  line-height: 220%;
+  overflow-y: auto;
+}
+#podstrona2 #pudelko #page2
+{
+  list-style-image: url(obrazy/narniaicon.png);
+  line-height: 220%;
+  overflow-y: auto;
+}
+#podstrona3 #pudelko #page2
+{
+  list-style-image: url(obrazy/mitologiaicon.png);
+  line-height: 220%;
+  overflow-y: auto;
+}
+.book-page 
+{  
+  background-color: bisque;
+  border-radius: 10px;
+  top: 5%;
+  left:32%;
+  width: 35%;
+  height: 90%;
+  padding: 2%;
+  line-height: 150%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: z-index 5s;
+  z-index: 0;
+  position: absolute;
+  box-shadow: inset 0 4px 30px 0 darkorange, inset 0 6px 30px 0 yellow, 0 4px 20px 0 #eeeeee30;   
+}
+.book-page.active 
+{
+  left:32%;
+  opacity: 1;
+  text-wrap: wrap;
+  overflow-y: auto;
+  z-index: 1;
+}
+.book-page.unactive
+{
+  animation-name: przejscie;
+  animation-duration: 2s;
+  transition: transform 1s;
+}
+@keyframes przejscie 
+{
+  0%{
+      transform: scale(1);
+      z-index: 1;
+      opacity: 1;
+  }
+  50%{
+      left: 32%;
+      opacity: 1;
+      transform: scale(1.1);
+      z-index: 1;
+  }  
+  100%{
+      left: 22%;
+      opacity: 0;
+      z-index: 1;
+      transform: scale(1.1);
+  }
+
+}
+#pudelko
+{
+  padding: 0;
+  text-align: justify;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#button-container 
+{
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  width: 100%;
+}
+#button-container a
+{
+  margin: auto;
+  padding: 1% 2%;
+  font-size: 80%;
+  margin-left: 5%;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background-color:saddlebrown;
+  border: groove 5px bisque;
+  text-decoration: none;
+  color: bisque;
+}
+#zmiana
+{
+  margin-left: 99%;
+  padding: 1% 2%;
+  text-wrap: nowrap;
+  cursor: pointer;
+  background-color:saddlebrown;
+  border: groove 5px bisque;
+  color: bisque;
+}
+#pochodnia1
+{
+background-image: url(obrazy/torch.gif);
+background-size: 100% 100%;
+width: 20%;
+height: 40%;
+position: relative;
+z-index: 3;
+left: 6%;
+top: 30%;
+animation-name: animp;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+#pochodnia2
+{
+background-image: url(obrazy/torch.gif);
+background-size: 100% 100%;
+width: 20%;
+height: 40%;
+position: relative;
+z-index: 3;
+left: 75%;
+bottom: 11%;
+animation-name: animp;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes animp
+{
+0%{
+      
+      filter: drop-shadow(0px 0px 10px #f0d800);
+      transform: scale(1.2);    
+  }
+  10%{
+      transform: scale(1.1);
+  }
+  20%{
+      filter: drop-shadow(0px 0px 20px #f08000);
+      transform: scale(1.2);  
+  }
+  30%{
+      transform: scale(1.1);  
+  }
+  40%{
+      filter: drop-shadow(0px 0px 10px #f0d800);
+      transform: scale(1.2);   
+  }
+  50%{
+      filter: drop-shadow(0px 0px 25px #f08000);
+      transform: scale(1.1);  
+  }
+  60%{
+      filter: drop-shadow(0px 0px 35px #f0d800);
+      transform: scale(1.2);  
+  }
+  70%{
+      transform: scale(1.1);  
+  }
+  80%{
+      filter: drop-shadow(0px 0px 20px #f08000);
+      transform: scale(1.2);  
+  }
+  90%{
+      transform: scale(1.1);  
+  }
+  100%{
+      filter: drop-shadow(0px 0px 15px #f0d800);
+      transform: scale(1.2);  
+  }
+}
+
+/* DO ODPALANIA STORNY NA URZĄDZENIACH MOBILNYCH */
+@media only screen and (max-height: 980px) and (max-width: 980px)
+{
+  /* STRONA GŁÓWNA */
+  #glowne
+  {
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #glowne a{
+    width: 30%;
+  }
+  .zakladki
+  {
+    height: 100%;
+    width: 100%;
+  }
+  .zakladki img
+  {
+    width: 100%;
+    height: 100%;
+    size: 100%;
+    border-radius: 10px;
+  }
+
+  /* CENNIK */
+  th, td 
+  {
+    width: 20%;
+  }
+
+  /* MENU */
+  nav ul li
+  {
+    font-size: 70%;
+    padding: 7%;
+  }
+  
+  nav ul li a
+  {
+    padding: 5% 0%;
+    border-radius: 10px;
+  }
+
+  /* OPINIE */
+  #submit-button
+  {
+    font-size: 40%;
+    width: 12%;
+    padding: 3% 0% 5% 0%;
+    margin-left: 96%;
+    text-align: center;
+  }
+  #opinion-form textarea
+  {
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 70%;
+    padding: 10%;
+    font-size: 80%;
+  }
+  #opinion-form
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* SUPPORT */
+  #srodek
+  {
+    flex-direction: column-reverse;
+    font-size: 40%;
+    align-items:start;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 0;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  #faq
+  {
+    width: 100%;
+    padding-top: 1%;
+  }
+  #faq h2
+  {
+    position: relative;
+    right: 2%;
+  }
+  #questions
+  {
+    width: 40%;
+    margin-left: 17%;
+  }
+  #questions li
+  {
+    padding: 10%;
+    width: 100%;
+    font-size: 100%;
+  }
+  #contact
+  {
+    margin: auto;
+    margin-top: 5%;
+  }
+  #contact-form textarea
+  {
+    font-size: 90%;
+  }
+  #contact-form button
+  {
+    font-size: 90%;
+  }
+
+  /* STOPKA */
+  .footer ul li a img
+  {
+    width: 8%;
+  }
+  .footer
+  {
+    padding: 5% 0%;
+  }
+
+  /* PODSTRONY DO KSIĄŻEK */
+  .book-page
+  {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-height: 750px) and (max-width: 750px)
+{
+  #glowne
+  {
+    margin-bottom: 10%;
+  }
+  nav
+  {
+    font-size: 50%;
+  }
+  #glownenag
+  {
+    font-size: 50%;
+  }
+  #srodek
+  {
+    margin-bottom: 20%;
+    font-size: 20%;
+    overflow-x: hidden;
+  }
+  .footer
+  {
+    padding: 2% 0%;
+  }
+  #contact-form textarea 
+  {
+    padding: 5% 0%;
+    font-size: 30%;
+    overflow-y: auto;
+  }
+  #contact-form button{
+    font-size: 20%;
+  }
+  #opinie
+  {
+    margin-bottom: 12%;
+  }
+  #submit-button
+  {
+    font-size: 40%;
+    margin-left: 96%;
+  }
+}

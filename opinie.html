@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opinie</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="obrazy/book.png" type="image/x-icon">
+</head>
+<body>
+
+  <nav id="side-nav">
+    <ul>
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="cennik.html">Cennik</a></li>
+      <li><a href="opinie.html">Opinie</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Opinie</h1>
+  </header>
+
+  <section id="opinie">
+    <!-- Przykładowa opinia -->
+    <div class="opinion">
+      <div class="opinion-header">
+        <h3>Mitologia Nordycka</h3>
+        <div class="stars">*****</div>
+      </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel libero nisi.
+          <h6>MCKAWKA</h6>
+        </p>
+    </div>
+    <p>Dodaj opinie:</p><br>
+    <!-- Formularz opinii -->
+    <form id="opinion-form">
+      <div>
+      <input id ="nick" type="text" placeholder="Nazwa użytkownika" required>
+      <input type="text" placeholder="Tytuł książki" required>    
+      <input type="number" min="1" max="5" placeholder="Ilość gwiazdek (1-5)" required>
+      </div>
+        <textarea placeholder="Napisz swoją opinię (maks. 200 słów)" maxlength="200"></textarea>
+        <button type="submit" id="submit-button">Wyślij</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <ul>
+      <li><a href="#"><img src="obrazy/facebook.jpg" alt="Facebook"></a></li>
+      <li><a href="#"><img src="obrazy/twitter.jpg" alt="Twitter"></a></li>
+      <li><a href="#"><img src="obrazy/instagram.jpg" alt="Instagram"></a></li>
+      <li><a href="#"><img src="obrazy/youtube.jpg" alt="youtube"></a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
